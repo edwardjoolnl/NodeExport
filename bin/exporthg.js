@@ -2,12 +2,13 @@
 var options = require('../src/options');
 var command = require('../src/command');
 
-var opts = options.getOptions();
+options = options.getOptions();
+var executed = false;
+module.exports.export = function(options) {
+	executed = true;
+	command.exec('hg exportfiles -mr ' + options.from + ':' + options.to + ' ' + options.destination, function(callback){
+		console.log(callback);
+	});
+}
 
-
-command.execute('hg log', function(callback){
-	console.log(callback);
-});
-
-
-
+if(!executed) module.exports.export(options);

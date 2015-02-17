@@ -5,6 +5,6 @@ var command = require('../src/command');
 var opts = options.getOptions();
 
 
-command.execute('git status', function(callback){
+command.exec('git status', function(callback){
 	console.log(callback);
 });
