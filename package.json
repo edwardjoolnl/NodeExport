@@ -6,8 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "gulp-util": "^3.0.3",
+    "mocha": "visionmedia/mocha#4727d357ea",
+    "through2": "^0.6.3"
+  },
   "bin": {
-    "export" : "./bin/nodeexport.js"
+    "export-git": "./bin/exportgit.js",
+    "export-hg": "./bin/exporthg.js"
   },
   "repository": {
     "type": "git",
