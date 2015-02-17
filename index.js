@@ -3,6 +3,7 @@ var gutil = require('gulp-util');
 var exportgit = require('./bin/exportgit');
 var exporthg = require('./bin/exporthg');
 var stream = through();
+var opts = require('options');
 
 // Consts
 const PLUGIN_NAME = 'nodeexport';
@@ -19,6 +20,11 @@ module.exports.exportgit = function(options) {
 }
 
 function getOptions(options) {
+
+	if(!options) {
+		options = opts.getOptions(); // get options from arguments (argv)
+	}
+
 	if(!options.from) {
 		throw new Error('Option "from" missing');
 	}
