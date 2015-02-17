@@ -1,0 +1,25 @@
+{
+  "name": "NodeExport",
+  "version": "0.0.1",
+  "description": "Export a set of changes or revisions from git or mecurial to a given folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edwardjoolnl/NodeExport.git"
+  },
+  "keywords": [
+    "export",
+    "revisions",
+    "git",
+    "mecurial"
+  ],
+  "author": "Edward Brosens <edward@jool.nl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardjoolnl/NodeExport/issues"
+  },
+  "homepage": "https://github.com/edwardjoolnl/NodeExport"
+}
