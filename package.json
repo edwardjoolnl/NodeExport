@@ -1,5 +1,5 @@
 {
-  "name": "NodeExport",
+  "name": "nodeexport",
   "version": "0.0.1",
   "description": "Export a set of changes or revisions from git or mecurial to a given folder",
   "main": "index.js",
